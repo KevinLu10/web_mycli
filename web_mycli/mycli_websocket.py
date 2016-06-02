@@ -117,7 +117,6 @@ class MycliHandler():
         self.mysql_port = data['mysql_port']
         self.mysql_username = data['mysql_user']
         self.mysql_password = data['mysql_pwd']
-        log.error(1)
         msg['mysql_username'] = self.mysql_username
         try:
             self.mysql_client = MycliClient(self.mysql_ip,
