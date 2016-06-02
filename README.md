@@ -17,8 +17,10 @@
 6. enter your mysql's ip,port,username and password ,click `Connect`
 
 ## Example
-
-![](/doc/mycli_example0.png)
-![](/doc/mycli_example1.png)
-![](/doc/mycli_example2.png)
+1. Example
+        ![](/doc/mycli_example0.png)
+2. Example
+        ![](/doc/mycli_example1.png)
+3. Example
+        ![](/doc/mycli_example2.png)
 
