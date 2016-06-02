@@ -19,6 +19,8 @@
 ## Example
 
 ![](/doc/mycli_example0.png)
+----------
 ![](/doc/mycli_example1.png)
+----------
 ![](/doc/mycli_example2.png)
 
