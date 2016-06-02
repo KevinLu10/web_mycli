@@ -1,14 +1,10 @@
 # encoding=utf-8
-"""
-mysql建立websocket
-"""
 import re
 import traceback
 import json
 import logging
 import ipaddress
 from mycli_client import MycliClient
-from datetime import datetime
 
 log = logging.getLogger('mycli')
 
@@ -112,7 +108,7 @@ class MycliHandler():
         :return:
         '''
 
-        data = json.loads(msg.get('data'))  # 连接到的mysql ip
+        data = json.loads(msg.get('data'))
         self.mysql_ip = data['mysql_ip']
         self.mysql_port = data['mysql_port']
         self.mysql_username = data['mysql_user']
@@ -224,7 +220,7 @@ class MycliHandler():
             return replaced_sub_sql
 
         if sql.lower().strip().startswith('select'):
-            # 匹配 limit 1,2这种类型的
+            # match limit 1,2
             regx = 'limit +(\d+) *, *(\d+)[^)\'"]*$'
             two_limit = re.findall(regx, sql)
             if len(two_limit) == 1:
@@ -232,7 +228,7 @@ class MycliHandler():
                 if int(length) > max_limit:
                     sql = re.sub(regx, repl_two_limit, sql, 1)
                 return sql
-            # 匹配 limit 23 这种类型的
+            # match limit 23
             regx = 'limit +(\d+)[^)\'"]*$'
             one_limit = re.findall(regx, sql)
             if len(one_limit) == 1:
@@ -241,7 +237,6 @@ class MycliHandler():
                     sql = re.sub(regx, repl_one_limit, sql, 1)
                 return sql
 
-            # 直接在后面添加
             limit_str = ' limit %d ' % max_limit
             try:
                 index = sql.index('\\G')

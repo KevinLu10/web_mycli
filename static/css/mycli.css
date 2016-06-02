@@ -1,11 +1,6 @@
 * {
     -webkit-text-size-adjust: none;
 }
-/*#mycli_title {*/
-    /*margin: 5px 0;*/
-    /*text-align: center;*/
-/*}*/
-
 
 #mycli_div {
     overflow-y: auto;
@@ -32,49 +27,6 @@
 }
 
 
-/*#mycli_tips {*/
-    /*position: absolute;*/
-    /*right: -180px;*/
-    /*top: 15px;*/
-    /*border: 1px solid #EDEDED;*/
-    /*font: 11px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;*/
-    /*padding: 10px 5px 5px;*/
-    /*border-radius: 5px;    */
-/*}*/
-/*#mycli_tips ul, #mycli_tips ul li {*/
-    /*margin: 0;*/
-    /*padding: 0;*/
-    /*list-style-type: none;*/
-/*}*/
-/*#mycli_tips ul {*/
-    /*margin-left: 15px;*/
-/*}*/
-/*#mycli_tips ul li {*/
-    /*list-style-type: circle;*/
-/*}*/
-/*#mycli_tips #mycli_readmore {*/
-    /*margin: 5px 10px;*/
-    /*text-align: right;*/
-/*}*/
-/*#mycli_readmore a, #mycli_readmore a:active {*/
-    /*color: #AAAAAA;*/
-	/*text-decoration: underline;*/
-    /*outline: none;*/
-/*}*/
-/*#mycli_readmore a:hover {*/
-	/*color: #00A9DA;*/
-	/*text-decoration: none;*/
-/*}*/
-/*.mycli .mycli_line {*/
-    /*width: 100%; */
-    /*border: 0px solid #000;*/
-/*}*/
-/*.mycli .mycli_num {*/
-    /*width: 20px;*/
-    /*height: 20px;*/
-    /*line-height: 25px;*/
-    /*text-align: center;*/
-/*}*/
 .mycli .mycli_str {
     height: 20px;
     line-height: 20px;
