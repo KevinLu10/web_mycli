@@ -1,0 +1,155 @@
+* {
+    -webkit-text-size-adjust: none;
+}
+/*#mycli_title {*/
+    /*margin: 5px 0;*/
+    /*text-align: center;*/
+/*}*/
+
+
+#mycli_div {
+    overflow-y: auto;
+    background-color: #EDEDED;
+    padding: 0 5px 10px;
+    font: 14px/1.5 Tahoma,Helvetica,Arial,Microsoft YaHei,sans-serif;
+    /*padding-bottom: 400px;*/
+    height: 550px;
+    overflow: auto;
+    border: 1px solid #eee;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 5px 200px 20px;
+    background: #EDEDED;
+    color: white
+}
+
+#mycli_div table, #mycli_div tr, #mycli_div td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: 14px/1.5 Tahoma,Helvetica,Arial,Microsoft YaHei,sans-serif;
+    color:white;
+}
+
+
+/*#mycli_tips {*/
+    /*position: absolute;*/
+    /*right: -180px;*/
+    /*top: 15px;*/
+    /*border: 1px solid #EDEDED;*/
+    /*font: 11px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    /*padding: 10px 5px 5px;*/
+    /*border-radius: 5px;    */
+/*}*/
+/*#mycli_tips ul, #mycli_tips ul li {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*list-style-type: none;*/
+/*}*/
+/*#mycli_tips ul {*/
+    /*margin-left: 15px;*/
+/*}*/
+/*#mycli_tips ul li {*/
+    /*list-style-type: circle;*/
+/*}*/
+/*#mycli_tips #mycli_readmore {*/
+    /*margin: 5px 10px;*/
+    /*text-align: right;*/
+/*}*/
+/*#mycli_readmore a, #mycli_readmore a:active {*/
+    /*color: #AAAAAA;*/
+	/*text-decoration: underline;*/
+    /*outline: none;*/
+/*}*/
+/*#mycli_readmore a:hover {*/
+	/*color: #00A9DA;*/
+	/*text-decoration: none;*/
+/*}*/
+/*.mycli .mycli_line {*/
+    /*width: 100%; */
+    /*border: 0px solid #000;*/
+/*}*/
+/*.mycli .mycli_num {*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+    /*line-height: 25px;*/
+    /*text-align: center;*/
+/*}*/
+.mycli .mycli_str {
+    height: 20px;
+    line-height: 20px;
+    width: 100%;
+}
+
+.mycli .mycli_command_line {
+    width: 100%;
+    height: 100%;
+    outline: none !important;
+    background-color: inherit;
+    color: #ffffff;
+    border:0px
+}
+.mycli #mycli_command_line{ background-color: #3D3D3D;}
+
+pre{
+    margin:0;
+    color:inherit;
+    background: inherit;
+    border: inherit;
+    padding:inherit;
+    font-size: 14px;
+}
+
+#completer {
+    /*padding: 0 5px;*/
+    overflow-y: auto;
+    max-height: 200px;
+    display: none;
+    position: absolute;
+    background: #008787;
+    color: #ffffff
+}
+
+#completer li {
+    list-style-type: none;
+    padding: 0 5px;
+    width: 100%;
+}
+
+#run_status {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+
+}
+
+#run_status img {
+    width: 30px;
+
+}
+
+#mycli_div {
+    position: relative;
+}
+
+.mycli {
+    position: relative;
+}
+
+.config {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    border: 1px solid #e7e7e7;
+    padding: 10px;
+    height: 55px;
+}
+
+.config input {
+    width: 200px;
+    display: inline-block;
+}

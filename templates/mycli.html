@@ -1,0 +1,42 @@
+{% load static %}
+<html>
+<header>
+    <title>Web Mycli</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/mycli.css">
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/mycli.js"></script>
+    <style>
+    </style>
+</header>
+<body>
+<div class="config">
+    <input class="form-control" id="mysql_host" placeholder="MySQL HOST" value="192.168.8.190">
+    <input class="form-control" id="mysql_port" placeholder="MySQL PORT" value="3306">
+    <input class="form-control" id="mysql_user" placeholder="MySQL USERNAME" value="update_write">
+    <input class="form-control" id="mysql_pwd" placeholder="MySQL PASSOWRD" value="update_read_write">
+    <!--<button class="btn btn-success " id="mycli_action">Connect</button>-->
+    <button type="button" class="btn btn-success" id="mycli_action" >
+        <span class="glyphicon glyphicon-play action-icon" aria-hidden="true"></span>
+        <span class="action-type">Connect</span>
+    </button>
+</div>
+<div class="mycli">
+
+    <div id="mycli_div"
+         style=" ">
+    </div>
+    <div id="run_status" hidden>
+        <img src="static/img/validate/loading.gif">
+    </div>
+</div>
+<p>PS:SELECT statement will only return 1000 result lines at most </p>
+
+<script type="text/javascript">
+    $('body').append("<div style='' id='completer'></div>")
+    MycliShell.init("mycli_action");
+
+</script>
+</body>
+</html>
