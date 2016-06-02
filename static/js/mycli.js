@@ -197,6 +197,7 @@ MycliShell.init = function (hook) {
         }
         if (!($("#mysql_host").val() && $("#mysql_port").val() && $("#mysql_user").val() && $("#mysql_pwd").val())) {
             custom_alert('Please input mysql_host and mysql_port and mysql_user and mysql_pwd')
+            return
         }
         MycliShell.mysql_ip = $("#mysql_host").val()
         MycliShell.mysql_port = $("#mysql_port").val()
