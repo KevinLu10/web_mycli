@@ -1,3 +1,4 @@
+## Quickstarts
 
 1. install django
 
@@ -14,3 +15,9 @@
     /usr/local/bin/uwsgi --http :9090 --wsgi-file django_wsgi.py --touch-reload /tmp/touch --http-websockets
 5. visit `http://localhost:9090/mycli`
 6. enter your mysql's ip,port,username and password ,`click Connect`
+
+## Example
+
+![](/doc/mycli_example10.png)
+![](/doc/mycli_example8.png)
+![](/doc/mycli_example9.png)
